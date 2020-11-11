@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
     <script src="app.js"></script>
     <title>Avenger Character Search</title>
 </head>
 <body>
-    <header> <h1>Avenger Character Search </h1></header>
-    <button class="btn">Search</button>
+    <header> <h1>Avenger Character Search </h1></header>  
+    <div class="form-container"></div>
+        <form class="search" method="get" >
+            <label for="search-value">Search by Full name or Alias</label>
+            <input type="text" id="search-value" name="search-value" placeholder="e.g. Captain America or Steve Roger">
+            <input type="submit" class="btn" name="Search" value="Search">
+        </form>
+    </div>
+    <div class=result-contianer>
+        <h1>Result</h1>
+        <hr>
+        <div id="result" class="result"></div>
+    </section>
+    
     
 </body>
 </html>
